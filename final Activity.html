@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links with Images</title>
+    <style>
+        /* Set a basic style for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: url('1111.jpeg'); 
+            background-size: cover;  
+            background-position: center;  
+            background-repeat: no-repeat;  
+            background-attachment: fixed;
+        }
+
+        /* Create a container to hold the links */
+        .card {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            gap: 30px;
+        }
+
+        /* Style each individual link */
+        .card a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: burlywood;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .card img {
+            width: 100%;  /* Set the size of the image */
+            height: 300px;  /* Set the size of the image */
+            object-fit: cover;  /* Space between image and text */
+        }
+
+        .card a:hover {
+            background-color: #ccc;
+        }
+
+        /* Center the links container horizontally */
+        .center {
+            text-align: center;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: burlywood;
+            color: white;
+            padding: 20px 40px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            justify-content: flex-end; /* Align items to the right */
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: auto;
+            z-index: 1000;
+            border-radius:20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding-left: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff6f61;
+        }
+    </style>
+</head>
+<body>
+   
+    <nav>
+        <ul>
+            <li><a href="Final Activity.html">HOME</a></li>
+            <li><a href="#getting-started">SERVICE</a></li>
+            <li><a href="https://www.facebook.com/puckboll05">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="card">
+        
+        <a href="NUMBER.html" class="left">
+            <div class="man">
+                <img src="3332.jpg" alt="Left Icon">
+                <h3>Number Conversion</h3>
+            </div>
+        </a>
+
+        <a href="Number System Data.html" class="center">
+            <div class="man">
+                <img src="3332.jpg" alt="Center Icon"> 
+                <h3>Number System Data</h3>
+            </div>
+        </a>
+
+        <a href="decu.html" class="right">
+            <div class="man">
+                <img src="3332.jpg" alt="Right Icon"> 
+                <h3>Learn & Grow</h3>
+            </div>
+        </a>
+    </div>
+
+</body>
+</html>
